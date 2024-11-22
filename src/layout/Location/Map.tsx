@@ -2,7 +2,7 @@ import data from 'data.json';
 import { Container as MapDiv, Marker, NaverMap, useNavermaps } from 'react-naver-maps';
 
 const Map = () => {
-  const { lat, lon } = data.mapInfo;
+  const { lat, lng } = data.mapInfo as { lat: number; lng: number };
   const navermaps = useNavermaps();
 
   return (
@@ -12,13 +12,13 @@ const Map = () => {
         height: '300px',
       }}>
       <NaverMap
-        defaultCenter={new navermaps.LatLng(lat, lon)}
+        defaultCenter={new navermaps.LatLng(lat, lng)}
         defaultZoom={17}
         draggable={false}
         pinchZoom={false}
         scrollWheel={false}
         keyboardShortcuts={false}>
-        <Marker defaultPosition={new navermaps.LatLng(lat, lon)} />
+        <Marker defaultPosition={new navermaps.LatLng(lat, lng)} />
       </NaverMap>
     </MapDiv>
   );
