@@ -4,14 +4,14 @@ import { getDatabase } from 'firebase/database';
 // TODO: https://firebase.google.com/docs/web/setup?hl=ko
 // 가이드에 따라 firebase config를 설정합니다.
 const firebaseConfig = {
-  apiKey: "AIzaSyD3dH6MHXy_vqCVn1IAIkgt0gAzcjDLpfw",
-  authDomain: "issac-kang.firebaseapp.com",
-  databaseURL: "https://issac-kang-default-rtdb.firebaseio.com",
-  projectId: "issac-kang",
-  storageBucket: "issac-kang.appspot.com",
-  messagingSenderId: "682836274910",
-  appId: "1:682836274910:web:461b304964377903429c4f",
-  measurementId: "G-R2GKDDW5TZ"
+  apiKey: "AIzaSyAsTS3t30mo49Xfoll6B89EVQnyzeE7qXM",
+  authDomain: "heily-invitation.firebaseapp.com",
+  databaseURL: "https://heily-invitation-default-rtdb.firebaseio.com",
+  projectId: "heily-invitation",
+  storageBucket: "heily-invitation.firebasestorage.app",
+  messagingSenderId: "1032105547352",
+  appId: "1:1032105547352:web:ba3b81b5bd81fc43c55c2d",
+  measurementId: "G-PZ2WYDXECV"
 };
 
 export const firebaseApp = initializeApp(firebaseConfig);
