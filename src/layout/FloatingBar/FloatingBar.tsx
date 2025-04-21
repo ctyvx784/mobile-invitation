@@ -1,4 +1,4 @@
-// import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import data from 'data.json';
 import { increment, onValue, ref, update } from 'firebase/database';
@@ -8,7 +8,6 @@ import Heart from '@/assets/icons/heart_plus.svg?react';
 import Share from '@/assets/icons/share.svg?react';
 import Upward from '@/assets/icons/upward.svg?react';
 import Button from '@/components/Button.tsx';
-import { useEffect, useState } from 'react';
 
 const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const { emojis } = data;

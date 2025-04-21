@@ -6,6 +6,7 @@ const Main = () => {
   const { greeting } = data;
   return (
     <div>
+      {/* TODO:: main 사진 교체 */}
       <MainImg src={mainImg} />
       <MainTitle>{greeting.title}</MainTitle>
       <SubTitle>{greeting.eventDetail}</SubTitle>

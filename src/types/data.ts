@@ -45,7 +45,7 @@ export interface IMapInfo {
   naverMap: string;
   kakaoMap: string;
   lat: number;
-  lon: number;
+  lng: number;
 }
 
 export interface ILocationInfo {
